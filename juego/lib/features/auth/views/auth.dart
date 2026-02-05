@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:juego/features/home/home.dart';
 
 class AuthScreen extends StatelessWidget {
   const AuthScreen({super.key});
@@ -39,7 +40,12 @@ class AuthScreen extends StatelessWidget {
                   height: 28,
                   width: 28,
                 ),
-                onPressed: () {},
+                onPressed: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (_) => HomeScreen()),
+                  );
+                },
                 label: Text(
                   'Sign in with Google',
                   style: Theme.of(context).textTheme.titleSmall?.copyWith(

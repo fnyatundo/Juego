@@ -12,7 +12,12 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      theme: ThemeData(textTheme: GoogleFonts.shantellSansTextTheme()),
+      theme: ThemeData(
+        textTheme: GoogleFonts.shantellSansTextTheme(),
+        colorScheme: ColorScheme.fromSeed(
+          seedColor: const Color.fromARGB(255, 7, 64, 93),
+        ),
+      ),
       home: AuthScreen(),
     );
   }
