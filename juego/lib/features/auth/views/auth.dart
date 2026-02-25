@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:juego/features/Navigation/nav_bar.dart';
 import 'package:juego/features/home/home.dart';
 
 class AuthScreen extends StatelessWidget {
@@ -43,7 +44,7 @@ class AuthScreen extends StatelessWidget {
                 onPressed: () {
                   Navigator.push(
                     context,
-                    MaterialPageRoute(builder: (_) => HomeScreen()),
+                    MaterialPageRoute(builder: (_) => NavBar()),
                   );
                 },
                 label: Text(
